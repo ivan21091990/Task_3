@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите дальнейшее действие: ");
         System.out.println("Если Вам необходимо воспользоваться калькулятором - введите 1;");
-        System.out.println("Если Вам необходим поиск максимального элемента в массиве - введите 2;\n");
+        System.out.println("Если Вам необходим поиск максимального элемента в массиве - введите 2;");
         System.out.print("Ваш выбор: ");
         boolean replay;
         int choice;
@@ -59,13 +59,7 @@ public class Main {
                 System.out.println("Введите размер массива и нажмите Enter: ");
 
                 int x = scanner.nextInt();
-
-                try {
-                    x = Integer.parseInt(scanner.nextLine());
-                } catch (NumberFormatException e) {
-                    e.printStackTrace();
-                }
-
+                scanner.nextLine();
                 String array[] = new String[x];
 
                 for (int i = 0; i < array.length; i++) {
